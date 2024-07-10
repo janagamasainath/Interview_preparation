@@ -22,15 +22,15 @@ public class CharactersOccurence {
 		// using java 1.7
 		char[] charArray = str.toCharArray(); // converting into individual character
 		Map<Character, Integer> map= new HashMap<>(); // creating map object key=character & value =Integer
-		for (char ch : charArray) {     //iterate through for each
-			if (map.containsKey(ch)) {    // checking the condition 
-				map.put(ch,map.get(ch)+1);  // add the character to map
+		for (char ch : charArray) {    
+			if (map.containsKey(ch)) {    
+				map.put(ch,map.get(ch)+1);  
 			}else {
 				map.put(ch,1);
 			}
 		}
 		
-		System.out.println(map);
+		//System.out.println(map);
 		
 	}
 
