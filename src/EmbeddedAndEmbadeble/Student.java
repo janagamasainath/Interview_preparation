@@ -7,12 +7,14 @@ public class Student {
 	private List<String> courses;
 	private int age;
 	private Address address;
-	public Student(String name, List<String> courses, int age, Address address) {
+	private int experience;
+	public Student(String name, List<String> courses, int age, Address address, int experience) {
 		super();
 		this.name = name;
 		this.courses = courses;
 		this.age = age;
 		this.address = address;
+		this.experience = experience;
 	}
 	public String getName() {
 		return name;
@@ -38,9 +40,16 @@ public class Student {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+	public int getExperience() {
+		return experience;
+	}
+	public void setExperience(int experience) {
+		this.experience = experience;
+	}
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", courses=" + courses + ", age=" + age + ", address=" + address + "]";
+		return "Student [name=" + name + ", courses=" + courses + ", age=" + age + ", address=" + address
+				+ ", experience=" + experience + "]";
 	}
 	
 	
