@@ -1,4 +1,4 @@
-package EmbeddedAndEmbadeble;
+package hasarelation;
 
 public class Address {
 	private String Street;
