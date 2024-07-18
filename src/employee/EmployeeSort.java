@@ -1,6 +1,8 @@
 package employee;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -11,7 +13,10 @@ public class EmployeeSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		List<Integer> collect3 = Arrays.asList(1,2,9,8,6,5,4).stream().map(a->a).sorted().collect(Collectors.toList());
+		
+		
+   
 		List<Employee> list = new ArrayList<>();
 		list.add(new Employee("shreyansh", "IT", 29000.00, 19));
 		list.add(new Employee("kiran", "HR", 26000.00, 21));

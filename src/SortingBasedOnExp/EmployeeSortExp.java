@@ -1,3 +1,4 @@
+
 package SortingBasedOnExp;
 
 import java.time.LocalDate;
@@ -22,8 +23,12 @@ public class EmployeeSortExp {
 		// finding the employee have morethan 4 years of experience in the depatment "IT"
 		List<Employee> collect = list.stream().filter(a->a.getYearsOfService()>4).collect(Collectors.toList());
 		List<Employee> collect2 = collect.stream().filter(a->a.getDepartment().equals("IT")).collect(Collectors.toList());
-		collect2.forEach(System.out::println);
+		//collect2.forEach(System.out::println);
 
+		
+		List<Employee> collect3 = list.stream().filter(a->a.getYearsOfService()>4).collect(Collectors.toList());
+		List<Employee> collect4 = collect3.stream().filter(a->a.getDepartment().equals("IT")).collect(Collectors.toList());
+		collect4.forEach(System.out::println);
 	}
 
 }
